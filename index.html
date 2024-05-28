@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowthFusion</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--iconscout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--sliding window-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img class="logo" src="./images/bg.png" alt="">
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="courses.html"></a></li> -->
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!--main header-->
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Make a <span>good plan </span>and <br><span>grow </span>your business</h1>
+                <p>Innovative design, Flawless code, Expert development and Compelling branding – all at Growth Fusion Solutions.</p>
+                <p>Growth Fusion specializes in a comprehensive range of services including design, code development, and branding. </p>
+                <a href="about.html" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/online-graduation.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--category section-->
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus culpa corporis ex voluptas, impedit
+                    assumenda totam molestiae itaque ut aperiam quidem ab quas magnam doloremque! Officiis architecto
+                    veritatis accusamus repellat.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Blockchain</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-palette"></i></span>
+                    <h5>Graphic Design</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-usd-circle"></i></span>
+                    <h5>Finance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+                    <h5>Marketting</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-music"></i></span>
+                    <h5>Music</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
+                    <h5>Business</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis!</p>
+
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--popular courses-->
+    <!-- <section class="courses">
+        <h2>Our Popular <span>Courses</span></h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course___image">
+                    <img src="images/marketing.svg" alt="" id="marketing">
+                </div>
+                <div class="course__info">
+                    <h4>Marketting</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas magnam amet porro dolore
+                        laborum tempora.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course___image">
+                    <img src="images/website-development.svg" alt="" id="marketing">
+                </div>
+                <div class="course__info">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas magnam amet porro dolore
+                        laborum tempora.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course___image">
+                    <img src="./images/ui-ux.svg" alt="" id="marketing">
+                </div>
+                <div class="course__info">
+                    <h4>UI/UX Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas magnam amet porro dolore
+                        laborum tempora.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section> -->
+    <!--Frequently asked questions-->
+    <!-- <section class="faqs">
+        <h2>Frequently Asked Questions <span>FAQs</span></h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do i choose the right course?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus quas veniam illum
+                        mollitia rem temporibus? Odio architecto repellat voluptas vel labore aspernatur obcaecati
+                        reprehenderit, quod, quisquam minima fuga. Aperiam.</p>
+                </div>
+            </article>
+        </div>
+    </section> -->
+    <!--Testimonial Section-->
+    <section class="container testimonials__container mySwiper">
+        <h2>Customer's <span>Testimonials</span></h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/shinez.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Shinez</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>GrowthFusion boasts an adept media buying team capable of delivering leads across diverse verticals. Renowned for their trustworthiness and transparency, they are the ideal choice for all your lead generation needs!</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/rocketmortgage.png" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Rocket Mortgage</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>Having collaborated with the GrowthFusion team for five years, I can confidently affirm their excellence. Their proactive approach, rapid execution, and commitment to quality make them an outstanding partner.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/assurance-logo.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Assurance</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>GrowthFusion specializes in numerous lead generation verticals, offering substantial volume coupled with top-notch quality. If your business seeks to boost up, GrowthFusion should undoubtedly be on your radar.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/edmnetwork.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>EDM Network</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>Since partnering with GrowthFusion, we've experienced a dramatic increase in leads and more importantly, the quality is exceptional. They truly deliver on their promise of substantial volume coupled with top-notch quality. </p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/nationaldebtrelief.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>National Debt Relief</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>GrowthFusion's expertise across numerous lead generation verticals was a major selling point for us. They have a deep understanding of our industry and were able to tailor a campaign that targets our ideal customers. </p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/figure.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Figure</h5>
+                    <!-- <small>Student</small> -->
+                </div>
+                <div class="testimonial__body">
+                    <p>Trust and transparency are paramount when it comes to marketting. GrowthFusion excels in both areas. They provide us with detailed reports and clear communication every step of the way.</p>
+                </div>
+            </article>
+        </div>
+        <!-- <div class="swiper-pagination swiper"></div> -->
+    </section>
+    <!--footer section-->
+    <footer clas="footer" id="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h5>About Us</h5>
+                </a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quaerat velit illum, laudantium
+                    minima dolorem recusandae placeat officiis amet</p>
+            </div>
+            <div class="footer__2">
+                <h5>Permalinks</h5>
+                <ul class="permalinks">
+                    <li><a href="index.html"></a>Home</li>
+                    <li><a href="about.html"></a>About</li>
+                    <!-- <li><a href="courses.html"></a>Courses</li> -->
+                    <li><a href="contact.html"></a>Contact</li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h5>Privacy</h5>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h5>Contact Us</h5>
+                <div>
+                    <p>2705, Sunset Lakeview Apt
+                        Delaware, <br> United States</p>
+                    <p>+1 (302 451 9522)</p>
+                    <a href="mailto:accounts@growthfusion.co">accounts@growthfusion.co</a>
+                    </div>
+                <ul class="footer__socials">
+                    <li style="font-size: 2.5rem;"><a href=""><i class="uil uil-facebook-f"></i></a></li>
+                    <li style="font-size: 2.5rem;"><a href=""><i class="uil uil-instagram-alt"></i></a></li>
+                    <li style="font-size: 2.5rem;"><a href=""><i class="uil uil-twitter"></i></a></li>
+                    <li style="font-size: 2.5rem"><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright"><small>Copyright &copy; GrowthFusion</small></div>
+    </footer>
+    <!--javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //adjusting according the window
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            },
+            autoplay: {
+                delay: 2800, 
+                disableOnInteraction: false 
+            }
+        });
+    </script>
+
+</body>
+
+</html>
